@@ -3,6 +3,9 @@
 # by Xuyuan Pang 2016-08-10 11:06:56
 
 
+__all__ = ['flatten', 'take', 'takeWhile', 'drop', 'dropWhile']
+
+
 def flatten(iterable):
     for ele in iterable:
         if hasattr(ele, '__iter__'):
