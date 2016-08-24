@@ -24,7 +24,7 @@ def take(iterable, n):
                 break
 
 
-def takeWhile(iterable, fn):
+def takeWhile(fn, iterable):
     for ele in iterable:
         if fn(ele):
             yield ele
@@ -40,7 +40,7 @@ def drop(iterable, n):
             n -= 1
 
 
-def dropWhile(iterable, fn):
+def dropWhile(fn, iterable):
     d = False
     for ele in iterable:
         if not d:
